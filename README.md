@@ -20,6 +20,9 @@ Sass:
 	basic visual styles,
 	typographic rhythm
 
+Simpleform
+Discus?
+
 Blogz ideaz for teh futurez:
 Bistri FTW
 SVG Animation/hiding&showing
