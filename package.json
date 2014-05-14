@@ -1,0 +1,19 @@
+{
+  "name": "ta1orjones",
+  "version": "1.0.0",
+  "homepage": "http://taylorjones.info/",
+  "description": "Personal website of web developer Taylor Jones",
+  "main": "js",
+  "repository": {
+    "type": "git",
+    "url": "https://tay1orjones@github.com/tay1orjones/tay1orjones.github.io.git"
+  },
+  "author": "Taylor Jones",
+  "license": "The MIT License (MIT)",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-jekyll": "^0.4.2"
+  }
+}
