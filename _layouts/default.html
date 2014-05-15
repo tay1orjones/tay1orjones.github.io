@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
 
-        <!-- Custom CSS -->
+        <!-- Maybe for production css and js we should clean the _site/css directory and then build the min file from the dev version (/css/main.css) -->
+
+        <!-- DEVELOPMENT CSS -->
         <link rel="stylesheet" href="/css/main.css">
+
+        <!-- PRODUCTION CSS - Uncomment when moving to prod -->
+        <!-- <link rel="stylesheet" href="/css/main.min.css"> -->
 
     </head>
     <body>
