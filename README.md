@@ -3,12 +3,6 @@ tay1orjones.github.io
 
 Personal Site using Jekyll with GitHub Pages, Grunt, Sass, and a bunch of other rad stuff.
 
-Stuff to do:
-Get Grunt running,
-sass compilation,
-jslint,
-other grunt related goodies.
-
 Typekit (pick out fonts!)
 
 Dependencies:
