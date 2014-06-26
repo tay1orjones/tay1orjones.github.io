@@ -1,7 +1,17 @@
-.test {
-  border-radius: 9000;
-  position: relative;
-  display: none;
+.wf-loading .blog-post__headline,
+.wf-loading .blog-post__headline-sub,
+.wf-loading .blog-post__body {
+  visibility: hidden;
+}
+
+.wf-active .blog-post__headline,
+.wf-active .blog-post__headline-sub,
+.wf-active .blog-post__body {
+  visibility: visible;
+}
+
+body {
+  font-family: "lato", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

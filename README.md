@@ -3,7 +3,7 @@ tay1orjones.github.io
 
 Personal Site using Jekyll with GitHub Pages, Grunt, Sass, and a bunch of other rad stuff.
 
-Typekit (pick out fonts!)
+Finish implementing Typekit
 
 Dependencies:
 	jquery 2.0, zepto, etc?
@@ -16,6 +16,7 @@ Sass:
 
 Simpleform
 Discus?
+Implement some kind of code highlighting for posts
 
 Blogz ideaz for teh futurez:
 Bistri FTW
