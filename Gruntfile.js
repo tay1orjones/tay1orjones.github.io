@@ -27,9 +27,11 @@ module.exports = function (grunt) {
                     sourcemap: true,
                     style: 'expanded'
                 },
+
                 files: { // Dictionary of files
                     'css/main.css': 'sass/main.sass' // 'destination': 'source
                 }
+
             }
         },
 

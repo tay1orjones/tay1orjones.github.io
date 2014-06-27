@@ -1,5 +1,5 @@
 name: tay1orjones
 markdown: redcarpet
-pygments: true
+pygments: false
 gems:
   - jekyll-sitemap
