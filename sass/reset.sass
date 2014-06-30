@@ -1,0 +1,36 @@
+/* Paul Irish, u so smart! http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+*,
+*:before,
+*:after
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+
+h1,h2,h3,h4,h5,h6,
+p,blockquote,pre,
+dl,dd,ol,ul,
+form,fieldset,legend,
+table,th,td,caption,
+hr
+	margin: 0
+	padding: 0
+
+/* So that `alt` text is visually offset if images don’t load. */
+img
+	font-style: italic
+
+/* Give form elements some cursor interactions... */
+label,
+input,
+textarea,
+button,
+select,
+option
+	cursor: pointer
+
+	.text-input:active,
+	.text-input:focus,
+	textarea:active,
+	textarea:focus
+		cursor: text
+		outline: none

@@ -29,7 +29,7 @@ module.exports = function (grunt) {
                 },
 
                 files: { // Dictionary of files
-                    'css/main.css': 'sass/main.sass' // 'destination': 'source
+                    '_site/css/main.css': 'sass/main.sass' // 'destination': 'source
                 }
 
             }
