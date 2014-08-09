@@ -4,7 +4,6 @@ module.exports = function (grunt) {
 
     // Lets load some plugins here
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-jslint');
     grunt.loadNpmTasks('grunt-jsbeautifier');
     grunt.loadNpmTasks('grunt-jekyll');
@@ -20,20 +19,6 @@ module.exports = function (grunt) {
             "<%= grunt.template.today('dd-mm-yyyy-hh:MM:ss') %>\n" +
             " * Copyright (c) <%= grunt.template.today('yyyy') %> <%= pkg.author.name %> |" +
             " Licensed <%= pkg.license %>\n */\n",
-
-        sass: {
-            dist: { // Target
-                options: { // Target options
-                    sourcemap: true,
-                    style: 'expanded'
-                },
-
-                files: { // Dictionary of files
-                    '_site/css/main.css': 'sass/main.sass' // 'destination': 'source
-                }
-
-            }
-        },
 
         jsbeautifier: {
             files: [
@@ -91,11 +76,6 @@ module.exports = function (grunt) {
 
         watch: {
 
-            sass: {
-                files: ["sass/*.sass"],
-                tasks: ["sass"]
-            },
-
             jsbeautifier: {
 
                 files: ["js/*.js", "Gruntfile.js"],
@@ -111,7 +91,7 @@ module.exports = function (grunt) {
             },
 
             jekyll: {
-                files: ["_layouts/*.html", "_posts/*.markdown", "index.html", "blog/*.html"],
+                files: ["_layouts/*.html", "_posts/*.markdown", "index.html", "blog/*.html", "_sass/*.sass", "css/*.sass"],
                 tasks: ["clean:forJekyllBuild", "jekyll:build"]
             }
 
