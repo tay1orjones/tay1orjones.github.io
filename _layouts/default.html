@@ -20,8 +20,8 @@
         <script type="text/javascript">
           (function(d) {
             var config = {
-              kitId: 'qsi1ndl',
-              scriptTimeout: 3000
+            kitId: 'huk0ufg',
+            scriptTimeout: 3000
             },
             h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
           })(document);
@@ -30,11 +30,19 @@
     </head>
     <body>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+        <div class="site  container-fluid">
+          <header class="header  row">
+            <div class="col-xs-6"><a class="header_logo" href="/"></a></div>
+            <nav class="header_nav  col-xs-6">
+              <button class="header_nav-toggle"></button>
+              <ul>
+                <li><a href="/work/">Work</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/resume/">Resume</a></li>
+              </ul>
+            </nav>
+          </header>
 
           {{ content }}
 
@@ -54,6 +62,9 @@
             </div>
           </div>
         </div>
+
+        <script type="text/javascript" src="js/lib/zepto.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
 
     </body>
 </html>

@@ -48,7 +48,7 @@ module.exports = function (grunt) {
         jslint: {
             all: {
                 src: [
-                    "js/**/*.js",
+                    "js/*.js",
                     "Gruntfile.js"
                 ],
                 directives: {
@@ -91,7 +91,7 @@ module.exports = function (grunt) {
             },
 
             jekyll: {
-                files: ["_layouts/*.html", "_posts/*.markdown", "index.html", "blog/*.html", "_sass/*.sass", "css/*.sass"],
+                files: ["_layouts/*.html", "_posts/*.markdown", "index.html", "blog/*.html", "_sass/*.sass", "css/*.sass", "js/*.js"],
                 tasks: ["clean:forJekyllBuild", "jekyll:build"]
             }
 

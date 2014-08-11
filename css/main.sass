@@ -5,13 +5,39 @@
 @import normalize.sass
 @import typekit.sass
 @import variables.sass
+@import helpers.sass
 
 /* Lets just set some defaults here... */
+*
+	box-sizing: border-box
+
 html
 	font-family: "lato", sans-serif
+	font-size: $base-font-size
+	line-height: $base-line-height
+	color: #3A3A3A
+	background: #FBFBFB
 
 h1, h2, h3, h4 h5, h6
-	font-family: "adelle-sans"
+	font-family: "ff-meta-serif-web-pro", serif
+
+a
+	color: #3A3A3A
+	text-decoration: none
+	text-shadow: 2px 0 0 #FBFBFB,-2px 0 0 #FBFBFB
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(58, 58, 58, 0.5)), to(rgba(58, 58, 58, 0.5)))
+	background-image: -webkit-linear-gradient(left, rgba(58, 58, 58, 0.5) 0%, rgba(58, 58, 58, 0.5) 100%)
+	background-image: linear-gradient(to right, rgba(58, 58, 58, 0.5) 0%, rgba(58, 58, 58, 0.5) 100%)
+	background-position: 0 1em
+	background-repeat: repeat-x
+	-webkit-background-size: 100% 1px
+	background-size: 100% 1px
+
+// a:hover
+
+// a:active
+
+// a:visited
 
 // .blog-post__headline
 // 	font-family: $heading-font-family
@@ -21,3 +47,90 @@ h1, h2, h3, h4 h5, h6
 
 // Compiled bootstrap grid .sass-ified
 @import grid.sass
+
+
+.header
+	padding: .5rem 0 1rem 0
+	background: #49B09C
+	color: #FFF
+
+	&_logo
+		display: block
+		height: 4rem
+		background: url("../images/logo.svg") no-repeat
+		background-size: contain
+
+	&.open-nav
+		padding-bottom: 14rem
+
+.header_nav
+	height: 4rem
+	
+	&-toggle
+		background: url("../images/menu.svg") no-repeat
+		height: 2rem
+		width: 2rem
+		background-size: contain
+		border: none
+		float: right
+		margin-top: 1rem
+		margin-right: .75rem
+		outline: none
+	
+	ul
+		display: none
+		list-style: none
+		width: 200%
+		left: -100%
+		position: absolute
+		padding: 0
+		margin: 4.5rem 0 0 0
+
+		.open-nav &
+			display: block
+
+	li
+		border-top: 1px solid #FFF
+		padding: .75rem
+		text-align: center
+		background: #81C8BA
+
+		&:last-child
+			border-bottom: 1px solid #FFF
+
+	a
+		color: #FFF
+		text-shadow: none
+		background: none
+
+	a:hover
+		color: #FFF
+		text-shadow: 2px 0 0 #81C8BA,-2px 0 0 #81C8BA
+		background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5)))
+		background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)
+		background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)
+		background-position: 0 1em
+		background-repeat: repeat-x
+		-webkit-background-size: 100% 1px
+		background-size: 100% 1px
+
+.home--about
+	background: #49B09C
+	color: #FFF
+
+	img
+		width: 100%
+		height: 100%
+		max-width: 200px
+		max-height: 200px
+		border: .25rem solid white
+		border-radius: 50%
+		display: block
+		margin: 0 auto
+
+	h1
+		font-size: 1.9rem
+
+.home--work
+
+.home--blog
