@@ -6,6 +6,9 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- Take this out when it's all finished -->
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
         <!-- Maybe for production css and js we should clean the _site/css directory and then build the min file from the dev version (/css/main.css) -->
@@ -34,6 +37,8 @@
           <header class="header  row">
             <div class="col-xs-6"><a class="header_logo" href="/"></a></div>
             <nav class="header_nav  col-xs-6">
+            <!-- TODO: REMOVE THIS TOGGLE DANGIT. PUT THE NAV ITEMS INLINE.
+            https://medium.com/design-philosophies/apple-and-hamburgers-a17e4099fada -->
               <button class="header_nav-toggle"></button>
               <ul>
                 <li><a href="/work/">Work</a></li>
