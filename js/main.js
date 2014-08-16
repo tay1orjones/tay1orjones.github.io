@@ -9,15 +9,7 @@
 
         el: {
 
-            navToggle: $(".header_nav-toggle"),
-
-            header: $(".header"),
-
-            formInput: function () {
-
-                return this.form.find('input');
-
-            }
+            header: $(".header")
 
         },
 

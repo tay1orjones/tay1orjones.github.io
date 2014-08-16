@@ -18,6 +18,19 @@ html
 	color: #3A3A3A
 	background: #FBFBFB
 
+::selection
+	background: #81C8BA
+	color: #FFF
+	text-shadow: none
+
+::-moz-selection
+	background: #81C8BA
+	color: #FFF
+	text-shadow: none
+
+body
+	font-size: 1.25rem
+
 h1, h2, h3, h4 h5, h6
 	font-family: "ff-meta-serif-web-pro", serif
 
@@ -28,7 +41,7 @@ a
 	background-image: -webkit-gradient(linear, left top, right top, from(rgba(58, 58, 58, 0.5)), to(rgba(58, 58, 58, 0.5)))
 	background-image: -webkit-linear-gradient(left, rgba(58, 58, 58, 0.5) 0%, rgba(58, 58, 58, 0.5) 100%)
 	background-image: linear-gradient(to right, rgba(58, 58, 58, 0.5) 0%, rgba(58, 58, 58, 0.5) 100%)
-	background-position: 0 1em
+	background-position: 0 1.1em
 	background-repeat: repeat-x
 	-webkit-background-size: 100% 1px
 	background-size: 100% 1px
@@ -45,92 +58,141 @@ a
 // 	font-family: 
 // .blog-post__body
 
+@import typography.sass
+
 // Compiled bootstrap grid .sass-ified
 @import grid.sass
+.row
+	max-width: $lg-breakpoint
+	margin: 0 auto
+
+
+
 
 
 .header
-	padding: .5rem 0 1rem 0
 	background: #49B09C
 	color: #FFF
+	padding: 0
 
-	&_logo
-		display: block
-		height: 4rem
-		background: url("../images/logo.svg") no-repeat
-		background-size: contain
+	a:not(.logo)
+		color: #FFF
+		text-shadow: none
+		background: none
 
-	&.open-nav
-		padding-bottom: 14rem
+		&:hover
+			color: #FFF
+			text-shadow: 2px 0 0 #81C8BA,-2px 0 0 #81C8BA
+			background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5)))
+			background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)
+			background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)
+			background-position: 0 1.1em
+			background-repeat: repeat-x
+			-webkit-background-size: 100% 1px
+			background-size: 100% 1px
 
-.header_nav
-	height: 4rem
-	
-	&-toggle
-		background: url("../images/menu.svg") no-repeat
-		height: 2rem
-		width: 2rem
-		background-size: contain
-		border: none
-		float: right
-		margin-top: 1rem
-		margin-right: .75rem
-		outline: none
-	
+			@media (min-width: $sm-breakpoint)
+				text-shadow: 2px 0 0 #49B09C,-2px 0 0 #49B09C
+
+nav
+	padding-bottom: .75rem
+
+	@media (min-width: $sm-breakpoint)
+		padding-bottom: 0
+
 	ul
-		display: none
 		list-style: none
-		width: 200%
-		left: -100%
-		position: absolute
 		padding: 0
-		margin: 4.5rem 0 0 0
-
-		.open-nav &
-			display: block
 
 	li
-		border-top: 1px solid #FFF
 		padding: .75rem
 		text-align: center
 		background: #81C8BA
+		border-bottom: 1px solid #FFF
 
-		&:last-child
-			border-bottom: 1px solid #FFF
+		&:first-child
+			display: none
+
+			@media (min-width: $sm-breakpoint)
+				display: block
+
+		&:nth-child(even)
+			border-right: 1px solid #FFF
+
+			@media (min-width: $sm-breakpoint)
+				border: none
+
+		@media (min-width: $sm-breakpoint)
+			background: inherit
+			border: none
+
+		&:not(:first-child)
+			@media (min-width: $sm-breakpoint)
+				padding: 2rem 0
+
+.logo,
+.logo:hover,
+.logo:active,
+.logo:visited
+	display: block
+	height: 4rem
+	background: url("../images/logo.svg") no-repeat
+	background-size: contain
+
+.home--about
+	background: #49B09C
+	color: #FFF
+	padding-bottom: $base-spacing-unit*2
+
+	.profile-picture
+		background: url("../images/profile.png") no-repeat
+		background-size: cover
+		width: 200px
+		height: 200px
+		border: .5rem solid white
+		border-radius: 50%
+		display: block
+		margin: 0 auto
+
+		@media (min-width: $sm-breakpoint)
+			background: url("../images/profile@2x.png") no-repeat
+			background-size: cover
+			width: 300px
+			height: 300px
+
+	h1
+		@media (max-width: $sm-breakpoint)
+			font-size: 2.5em
+
+		@media (min-width: $sm-breakpoint)
+			margin-top: $base-spacing-unit
+
+	p
+		@media (min-width: $sm-breakpoint)
+			width: 70%
+			margin: 0 15% $base-spacing-unit 15%
+
+.home--work
+
+.home--blog
+
+footer
+	color: #FFF
+	background: #3A3A3A
+	padding: 1.5rem 0
 
 	a
 		color: #FFF
 		text-shadow: none
 		background: none
 
-	a:hover
-		color: #FFF
-		text-shadow: 2px 0 0 #81C8BA,-2px 0 0 #81C8BA
-		background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5)))
-		background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)
-		background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)
-		background-position: 0 1em
-		background-repeat: repeat-x
-		-webkit-background-size: 100% 1px
-		background-size: 100% 1px
-
-.home--about
-	background: #49B09C
-	color: #FFF
-
-	img
-		width: 100%
-		height: 100%
-		max-width: 200px
-		max-height: 200px
-		border: .25rem solid white
-		border-radius: 50%
-		display: block
-		margin: 0 auto
-
-	h1
-		font-size: 1.9rem
-
-.home--work
-
-.home--blog
+		&:hover
+			color: #FFF
+			text-shadow: 2px 0 0 #3A3A3A,-2px 0 0 #3A3A3A
+			background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5)))
+			background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)
+			background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)
+			background-position: 0 1.1em
+			background-repeat: repeat-x
+			-webkit-background-size: 100% 1px
+			background-size: 100% 1px

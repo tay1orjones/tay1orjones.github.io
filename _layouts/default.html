@@ -33,44 +33,46 @@
     </head>
     <body>
 
-        <div class="site  container-fluid">
-          <header class="header  row">
-            <div class="col-xs-6"><a class="header_logo" href="/"></a></div>
-            <nav class="header_nav  col-xs-6">
-            <!-- TODO: REMOVE THIS TOGGLE DANGIT. PUT THE NAV ITEMS INLINE.
-            https://medium.com/design-philosophies/apple-and-hamburgers-a17e4099fada -->
-              <button class="header_nav-toggle"></button>
-              <ul>
-                <li><a href="/work/">Work</a></li>
-                <li><a href="/blog/">Blog</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/resume/">Resume</a></li>
-              </ul>
-            </nav>
-          </header>
+      <header class="header  container-fluid">
 
-          {{ content }}
+        <nav>
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
+          <ul class="row  flush--top">
+            <li class="col-xs-0  col-sm-4  col-md-8"><a class="logo" href="/"></a></li>
+            <li class="col-xs-6  col-sm-2  col-md-1"><a href="/work/">Work</a></li>
+            <li class="col-xs-6  col-sm-2  col-md-1"><a href="/blog/">Blog</a></li>
+            <li class="col-xs-6  col-sm-2  col-md-1"><a href="/about/">About</a></li>
+            <li class="col-xs-6  col-sm-2  col-md-1"><a href="/resume/">Resume</a></li>
+          </ul>
+
+        </nav>
+
+        {% if page.isHomepage %}
+          {% include home--about.html %}
+        {% endif %}
+
+      </header>
+
+      <main class="container-fluid">
+
+        {{ content }}
+
+      </main>
+
+      <footer class="footer  container-fluid">
+        <div class="row">
+          <p class="col-xs-12">
+            © 2014 Taylor Jones - 
+            <a href="https://twitter.com/tay1orjones">Twitter</a>
+             | <a href="https://codepen.io/tay1orjones">CodePen</a>
+             | <a href="https://github.com/tay1orjones/">GitHub</a>
+          </p>
         </div>
+      </footer>
 
-        <!--<script type="text/javascript" src="js/lib/zepto.min.js"></script>-->
+      <!--<script type="text/javascript" src="js/lib/zepto.min.js"></script>-->
 
-        <script type="text/javascript" src="js/main.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
 
     </body>
 </html>
