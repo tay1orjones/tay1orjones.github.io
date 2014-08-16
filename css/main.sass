@@ -72,8 +72,16 @@ a
 
 .header
 	background: #49B09C
+	background-image: url("../images/skyline.png")
+	background-repeat: no-repeat
+	background-position: bottom
+	background-size: cover
 	color: #FFF
 	padding: 0
+
+	@media (min-width: $sm-breakpoint)
+		background-size: 100%
+		background-image: url("../images/skyline@2x.png")
 
 	a:not(.logo)
 		color: #FFF
@@ -140,7 +148,6 @@ nav
 	background-size: contain
 
 .home--about
-	background: #49B09C
 	color: #FFF
 	padding-bottom: $base-spacing-unit*2
 
