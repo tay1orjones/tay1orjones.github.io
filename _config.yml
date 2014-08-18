@@ -5,3 +5,7 @@ gems:
   - jekyll-sitemap
 sass:
   style: expanded
+collections:
+  work:
+    output: true
+    permalink: /work/projects/:path/

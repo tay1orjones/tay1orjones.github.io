@@ -91,7 +91,20 @@ module.exports = function (grunt) {
             },
 
             jekyll: {
-                files: ["_layouts/*.html", "_posts/*.markdown", "index.html", "blog/*.html", "_sass/*.sass", "css/*.sass", "js/*.js"],
+                files: ["_layouts/*.html",
+                    "_posts/*.markdown",
+                    "index.html",
+                    "blog/*.html",
+                    "_sass/*.sass",
+                    "css/*.sass",
+                    "js/*.js",
+                    "_includes/*.html",
+                    "_work/*.markdown",
+                    "work/*.html",
+                    "about/*.html",
+                    "images/*.*",
+                    "resume/*.html"
+                ],
                 tasks: ["clean:forJekyllBuild", "jekyll:build"]
             }
 

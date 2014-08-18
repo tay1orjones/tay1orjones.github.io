@@ -4,19 +4,62 @@ title: Taylor Jones
 isHomepage: true
 ---
 
-<section class="home--work  row">
+<section class="container-fluid  home--work  text-center">
 
-	<h1 class="col-xs-12  text-center">Recent Work</h1>
+	<div class="row">
 
-	<p class="col-xs-12">Yo I got recent work, dawg.</p>
+		<h1 class="col-xs-12  text-center">Recent Work</h1>
+
+		<div class="col-xs-12">
+			
+			<ol class="row  list-unstyled">
+
+				{% for project in site.work limit:3 %}
+					<li class="col-xs-12  col-sm-4">
+						<div class="row">
+						<img class="col-xs-12  work__thumb" src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
+						<a class="text-center" href="{{ project.url }}">{{ project.title }}</a>
+						</div>
+					</li>
+				{% endfor %}
+
+			<ol>
+
+		</div>		
+
+	</div>
+
+	<div class="row">
+
+		<a href="/blog/" class="btn">View More</a>
+
+	</div>
 
 </section>
 
-<section class="home--blog  row">
+<section class="container-fluid  home--blog  text-center">
 
-	<h1 class="col-xs-12  text-center">From the Blog</h1>
+	<div class="row">
 
-	<p class="col-xs-6">Super Cool Blog Title, Man</p>
-	<p class="col-xs-6  text-right">07-10-2014</p>
+		<h1 class="col-xs-12  text-center">From the Blog</h1>
+
+		<ol class="homeblog  col-xs-12  list-unstyled">
+			{% for post in site.posts limit:3 %}
+				<li class="row">
+					<a class="homeblog__link  col-xs-12" href="{{ post.url }}">
+						<span class="homeblog__link--text col-xs-12  col-sm-6">{{ post.title }}</span>
+						<span class="homeblog__link--text col-xs-12  col-sm-6">{{ post.date | date_to_string }}</span>
+					</a>
+				</li>
+		    {% endfor %}
+		</ol>
+
+	</div>
+
+	<div class="row">
+
+		<a href="/blog/" class="btn">Read More</a>
+
+	</div>
 
 </section>

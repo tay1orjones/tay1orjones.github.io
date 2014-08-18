@@ -62,6 +62,10 @@ a
 
 // Compiled bootstrap grid .sass-ified
 @import grid.sass
+
+@import buttons.sass
+
+
 .row
 	max-width: $lg-breakpoint
 	margin: 0 auto
@@ -72,16 +76,14 @@ a
 
 .header
 	background: #49B09C
-	background-image: url("../images/skyline.png")
-	background-repeat: no-repeat
-	background-position: bottom
-	background-size: cover
 	color: #FFF
 	padding: 0
 
 	@media (min-width: $sm-breakpoint)
 		background-size: 100%
 		background-image: url("../images/skyline@2x.png")
+		background-repeat: no-repeat
+		background-position: bottom
 
 	a:not(.logo)
 		color: #FFF
@@ -90,7 +92,7 @@ a
 
 		&:hover
 			color: #FFF
-			text-shadow: 2px 0 0 #81C8BA,-2px 0 0 #81C8BA
+			text-shadow: 2px 0 0 #49B09C,-2px 0 0 #49B09C
 			background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5)))
 			background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)
 			background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)
@@ -99,11 +101,7 @@ a
 			-webkit-background-size: 100% 1px
 			background-size: 100% 1px
 
-			@media (min-width: $sm-breakpoint)
-				text-shadow: 2px 0 0 #49B09C,-2px 0 0 #49B09C
-
 nav
-	padding-bottom: .75rem
 
 	@media (min-width: $sm-breakpoint)
 		padding-bottom: 0
@@ -113,28 +111,18 @@ nav
 		padding: 0
 
 	li
-		padding: .75rem
+		padding: .75rem 0
 		text-align: center
-		background: #81C8BA
-		border-bottom: 1px solid #FFF
 
-		&:first-child
+		&:last-child
 			display: none
 
 			@media (min-width: $sm-breakpoint)
 				display: block
 
-		&:nth-child(even)
-			border-right: 1px solid #FFF
-
-			@media (min-width: $sm-breakpoint)
-				border: none
-
-		@media (min-width: $sm-breakpoint)
-			background: inherit
-			border: none
-
 		&:not(:first-child)
+			padding-top: 1.5rem
+
 			@media (min-width: $sm-breakpoint)
 				padding: 2rem 0
 
@@ -143,9 +131,12 @@ nav
 .logo:active,
 .logo:visited
 	display: block
-	height: 4rem
+	height: 3.25rem
 	background: url("../images/logo.svg") no-repeat
 	background-size: contain
+
+	@media (min-width: $sm-breakpoint)
+		height: 4rem
 
 .home--about
 	color: #FFF
@@ -159,7 +150,7 @@ nav
 		border: .5rem solid white
 		border-radius: 50%
 		display: block
-		margin: 0 auto
+		margin: $half-spacing-unit auto
 
 		@media (min-width: $sm-breakpoint)
 			background: url("../images/profile@2x.png") no-repeat
@@ -180,11 +171,58 @@ nav
 			margin: 0 15% $base-spacing-unit 15%
 
 .home--work
-	padding: $base-spacing-unit
+	padding: $base-spacing-unit 0
+
+	.work__thumb
+		@media (min-width: $xs-breakpoint)
+			width: 50%
+			margin: 0 25%
+
+		@media (min-width: $sm-breakpoint)
+			width: 100%
+			margin: auto
 
 .home--blog
-	padding: $base-spacing-unit
-	
+	padding: $base-spacing-unit 0
+	background: rgba(73, 176, 156, 0.25)
+
+	.btn:hover
+		background: rgba(73, 176, 156, 0.25)
+
+.homeblog
+	.row
+		border-bottom: 1px solid rgba(73, 176, 156, 0.25)
+
+		&:last-child
+			border: none
+
+.homeblog__link
+	display: block
+	background: none
+	text-align: center
+	text-shadow: none
+	padding: 0
+
+	&:hover
+		background: rgba(73, 176, 156, 0.25)
+
+.homeblog__link--text
+
+	&:first-child
+		margin-top: $base-spacing-unit
+
+	&:last-child
+		margin-bottom: $base-spacing-unit
+
+	@media (min-width: $sm-breakpoint)
+		margin: $base-spacing-unit 0
+
+		&:first-child
+			text-align: left
+
+		&:last-child
+			text-align: right
+
 footer
 	color: #FFF
 	background: #3A3A3A

@@ -3,4 +3,15 @@ layout: default
 title: Work - Taylor Jones
 ---
 
-Work I've done goes here
+<div>
+  <h1>My Work</h1>
+  <ul>
+    {% for project in site.work %}
+      <li>
+      	<h1>{{ project.title }}</h1>
+      	<img src="{{ project.thumbnail-path }}"/>
+      	<a href="{{ project.url }}">Click here to see more</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
