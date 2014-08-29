@@ -3,15 +3,27 @@ layout: default
 title: Work - Taylor Jones
 ---
 
-<div>
-  <h1>My Work</h1>
-  <ul>
+<div class="row  grid">
+
+  <h1 class="col-xs-12  text-center  push--top  push--bottom">Recent Projects</h1>
+
+  <ul class="list-unstyled">
+
     {% for project in site.work %}
-      <li>
-      	<h1>{{ project.title }}</h1>
-      	<img src="{{ project.thumbnail-path }}"/>
-      	<a href="{{ project.url }}">Click here to see more</a>
+
+      <li class="col-xs-12  col-sm-4  push--bottom">
+
+        <div class="row">
+          <img class="col-xs-12  work__thumb" src="{{ project.thumbnail-path }}" alt="{{ project.display-title }}">
+          <div class="col-xs-12">
+            <a class="text-center" href="{{ project.url }}">{{ project.display-title }}</a>
+          </div>
+        </div>
+
       </li>
+
     {% endfor %}
+
   </ul>
+
 </div>
