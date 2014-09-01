@@ -70,20 +70,23 @@ a
 	max-width: $lg-breakpoint
 	margin: 0 auto
 
-
-
-
+	&.row--restrict
+		max-width: $reading-width
+		margin-left: auto
+		margin-right: auto
+		float: none
 
 .header
 	background: #49B09C
 	color: #FFF
 	padding: 0
 
-	@media (min-width: $sm-breakpoint)
-		background-size: 100%
-		background-image: url("../images/skyline@2x.png")
-		background-repeat: no-repeat
-		background-position: bottom
+	&--home
+		@media (min-width: $sm-breakpoint)
+			background-size: 100%
+			background-image: url("../images/skyline@2x.png")
+			background-repeat: no-repeat
+			background-position: bottom
 
 	a:not(.logo)
 		color: #FFF
@@ -236,6 +239,18 @@ nav
 
 		&:last-child
 			text-align: right
+
+.blog__post
+	border-bottom: 1px solid rgba(0, 0, 0, .05)
+	
+.blog__post--link
+	background: none
+	text-shadow: none
+	padding: $base-spacing-unit 0
+	
+
+	&:hover
+		background: rgba(73, 176, 156, 0.25)
 
 footer
 	color: #FFF

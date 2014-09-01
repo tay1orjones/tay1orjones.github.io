@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+intro: "Intro to the post which describes a bit about the post's content"
 date:   2014-05-12 22:34:21
 categories: jekyll update
 ---

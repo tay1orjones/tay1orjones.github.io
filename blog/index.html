@@ -3,11 +3,30 @@ layout: default
 title: Blog - Taylor Jones
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
+<section class="row  row--restrict  grid">
+
+  <h1 class="col-xs-12  text-center  push--top  push--bottom">Blog Posts</h1>
+
+  <ol class="col-xs-12  list-unstyled  blog__posts">
+
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+
+      <li class="row  blog__post">
+
+      	<a href="{{ post.url }}" class="col-xs-12  blog__post--link">
+
+	      <h3 class="flush--top">{{ post.title }}</h3>
+
+	      <p>{{ post.intro }}</p>
+
+	      <span>Published {{ post.date | date: '%B %d, %Y' }}</span>
+
+      	</a>
+
+      </li>
+
     {% endfor %}
-  </ul>
+
+  <ol>
+
 </div>

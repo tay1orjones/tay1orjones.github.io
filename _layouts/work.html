@@ -2,10 +2,22 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<div class="row  row--restrict  grid">
 
-<h3>This project is so freaking radddddd</h3>
+	<h1 class="col-xs-12  text-center  push--top  flush-bottom">{{ page.display-title }}</h1>
 
-<div>
-{{ content }}
+	<p class="col-xs-12  text-center  flush--top">{{ page.subheading-title }}</p>
+
+	<div class="col-xs-12">
+
+		<img src="{{page.large-path1}}" alt="{{page.display-title}} Image 1" class="col-xs-12  col-sm-4">
+
+		<img src="{{page.large-path2}}" alt="{{page.display-title}} Image 2" class="col-xs-12  col-sm-4">
+
+		<img src="{{page.large-path3}}" alt="{{page.display-title}} Image 3" class="col-xs-12  col-sm-4  push--bottom">
+
+		{{ content }}
+
+	</div>
+
 </div>

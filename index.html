@@ -8,14 +8,14 @@ isHomepage: true
 
 	<div class="row">
 
-		<h1 class="col-xs-12  text-center  push">Recent Work</h1>
+		<h1 class="col-xs-12  text-center  push--bottom">Recent Work</h1>
 
 		<div class="col-xs-12">
 			
 			<ol class="row  list-unstyled">
 
 				{% for project in site.work limit:3 %}
-					<li class="col-xs-12  col-sm-4  push--bottom">
+					<li class="col-xs-12  col-md-4  push--bottom">
 						<div class="row">
 							<img class="col-xs-12  work__thumb" src="{{ project.thumbnail-path }}" alt="{{ project.display-title }}"/>
 							<div class="col-xs-12">
@@ -49,8 +49,8 @@ isHomepage: true
 			{% for post in site.posts limit:3 %}
 				<li class="row">
 					<a class="homeblog__link  col-xs-12" href="{{ post.url }}">
-						<span class="homeblog__link--text col-xs-12  col-sm-6">{{ post.title }}</span>
-						<span class="homeblog__link--text col-xs-12  col-sm-6">{{ post.date | date_to_string }}</span>
+						<span class="homeblog__link--text col-xs-12  col-md-6">{{ post.title }}</span>
+						<span class="homeblog__link--text col-xs-12  col-md-6">{{ post.date | date_to_string }}</span>
 					</a>
 				</li>
 		    {% endfor %}

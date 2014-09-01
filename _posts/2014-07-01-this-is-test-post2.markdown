@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Super Awesome Test post #2!"
+title: "Super Awesome Test post #2!"
+intro: "Intro to the post which describes a bit about the post's content"
 date:   2014-07-01 22:34:21
 categories: testing
 ---
