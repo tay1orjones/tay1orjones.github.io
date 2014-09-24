@@ -17,9 +17,8 @@ isHomepage: true
 				{% for project in site.work limit:3 %}
 					<li class="col-xs-12  col-md-4  push--bottom">
 						<div class="row">
-							<img class="col-xs-12  work__thumb" src="{{ project.thumbnail-path }}" alt="{{ project.display-title }}"/>
 							<div class="col-xs-12">
-								<a class="text-center" href="{{ project.url }}">{{ project.display-title }}</a>
+								<a class="text-center" href="{{ project.url }}"><img class="col-xs-12  work__thumb" src="{{ project.thumbnail-path }}" alt="{{ project.display-title }}"/>{{ project.display-title }}</a>
 							</div>
 						</div>
 					</li>
@@ -39,7 +38,7 @@ isHomepage: true
 
 </section>
 
-<section class="container-fluid  home--blog  text-center">
+<!-- <section class="container-fluid  home--blog  text-center">
 
 	<div class="row">
 
@@ -64,4 +63,4 @@ isHomepage: true
 
 	</div>
 
-</section>
+</section> -->

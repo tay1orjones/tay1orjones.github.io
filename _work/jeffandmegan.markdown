@@ -9,5 +9,6 @@ large-path2: "/images/work/jeffandmegan/jeffandmegan2.jpg"
 large-path3: "/images/work/jeffandmegan/jeffandmegan3.jpg"
 ---
 
-This is the description of this project.
+A couple friends of mine needed a quick website for their wedding. Using the html5 boilerplate, I created a responsive site using the graphics they provided for the website. 
 
+View the source on [github](https://github.com/tay1orjones/jeff-and-megan-wedding "Jeff and Megan Wedding website Source on GitHub.com")
