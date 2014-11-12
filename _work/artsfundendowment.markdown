@@ -15,7 +15,7 @@ I first started off with the logo. The logo needed to work well in a web and pri
 
 For the website, I leared early on that the Allied Arts Council (AAC) uses Microsoft Expressions for all of their websites. It's a tool that's a bit outdated, but the AAC requested that the site had to be manageable through this interface. Using Foundation 5, I created the site statically first, and then moved it over into expressions. The site utilizes the templating structure of Expressions, as well as includes. The site is fully responsive to help the content be digestable on any device. Presently, the site is a little light on content, although as the breadth of information around the endowment grows, the site will too.
 
-Check out the source code on [github](https://github.com/tay1orjones/arts-fund-endowment "Arts Fund Endowment Source on GitHub.com"), and the [live site here](http://artsfundendowment.com/ "Arts Fund Endowment").
+Check out the source code on [github](https://github.com/tay1orjones/arts-fund-endowment "Arts Fund Endowment Source on GitHub.com"), and the [live site here](http://stjoearts.org/artsfundendowment "Arts Fund Endowment").
 
 
 
