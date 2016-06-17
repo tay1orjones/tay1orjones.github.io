@@ -1,4 +1,4 @@
-taylorjon.es :pizza:
+taylorjon.es :pizza: [![Build Status](https://travis-ci.org/tay1orjones/tay1orjones.github.io.svg?branch=master)](https://travis-ci.org/tay1orjones/tay1orjones.github.io)
 
 <!-- npm scripts
 -----------
