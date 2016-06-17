@@ -14,9 +14,9 @@ install:
   - npm install
 
 script:
-  - harp compile . .dist
+  - harp compile ./_site ./.dist
   # - npm lint
-  # - npm test
+  - npm test
 
 deploy:
   skip_cleanup: true
