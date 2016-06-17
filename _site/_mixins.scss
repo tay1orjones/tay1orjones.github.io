@@ -1,0 +1,5 @@
+@mixin breakpoint($class) {
+  @if $class == middle {
+    @media (min-width: 41.25rem) { @content; }
+  }
+}
