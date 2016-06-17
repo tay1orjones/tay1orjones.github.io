@@ -1,3 +1,45 @@
-* {
-  text-align: left;
+$color-site-background: #fff;
+$color-link: #0000ee;
+$color-link-active: #ff0404;
+$color-link-visited: #571d8c;
+
+html {
+  // System Fonts FTW https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  text-size-adjust: 100%;
+}
+
+a {
+  background-image: linear-gradient(to right, $color-link 50%, $color-link 50%);
+  background-position: 100% 95%;
+  background-repeat: no-repeat;
+  background-size: 200% 1px;
+  color: $color-link;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 1px 0 0 $color-site-background, -1px 0 0 $color-site-background;
+
+  &:active {
+    background-image: linear-gradient(to right, $color-link-active 50%, $color-link-active 50%);
+    color: $color-link-active;
+  }
+
+  &:visited {
+    background-image: linear-gradient(to right, $color-link-visited 50%, $color-link-visited 50%);
+    color: $color-link-visited;
+  }
+}
+
+section {
+  display: flex;
+}
+
+.four-ohh-four {
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+
+  img {
+    width: 25rem;
+  }
 }
