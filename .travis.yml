@@ -1,0 +1,31 @@
+language: node_js
+
+node_js: 4.4.5
+
+cache:
+  directories:
+    - node_modules
+
+branches:
+  except:
+    - gh-pages
+
+install:
+  - npm install
+
+script:
+  - harp compile . .dist
+  # - npm lint
+  # - npm test
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: sh ./.deploy.sh
+  on:
+    branch: master
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never
