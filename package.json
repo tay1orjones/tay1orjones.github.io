@@ -1,0 +1,23 @@
+{
+  "name": "tay1orjones.github.io",
+  "version": "2.0.0",
+  "description": "chronicling my tex-mex intake on the world wide web",
+  "engines" : {
+    "node" : "4.4.5",
+    "npm" : "?"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tay1orjones/tay1orjones.github.io.git"
+  },
+  "author": "taylor jones",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://media.giphy.com/media/3o6ozoD1ByqYv7ARIk/giphy.gif"
+  },
+  "homepage": "https://github.com/tay1orjones/tay1orjones.github.io#readme"
+}

@@ -1,4 +1,8 @@
-taylorjones.com
-=====================
+taylorjon.es :pizza:
 
-Personal Site using Jekyll with GitHub Pages, Grunt, Sass, and a bunch of other rad stuff.
+<!-- npm scripts
+-----------
+
+`npm run ...` | Description
+---|---
+task | What it does as a plain human readable description. -->
