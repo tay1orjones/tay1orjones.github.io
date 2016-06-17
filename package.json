@@ -4,7 +4,7 @@
   "description": "chronicling my tex-mex intake on the world wide web",
   "engines" : {
     "node" : "4.4.5",
-    "npm" : "?"
+    "npm" : "2.15.5"
   },
   "main": "index.js",
   "scripts": {
