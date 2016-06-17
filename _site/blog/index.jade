@@ -1,0 +1,12 @@
+h1 blog posts
+
+for post, slug in public.blog._data
+  h2: a(href="#{ slug }")= post.title
+  != partial("posts/" + slug)
+  
+  - function excerpt(content) {
+    - if(content.indexOf("<!-- more -->") == -1) return content;
+    - else return content.split("<!-- more -->")[0];
+  - }
+
+  != excerpt(partial(slug))
