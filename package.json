@@ -1,22 +1,28 @@
 {
-  "name": "tay1orjones",
-  "version": "1.0.0",
-  "homepage": "http://taylorjones.info/",
-  "description": "Personal website of web developer, Taylor Jones",
-  "main": "js",
-  "repository": {
-    "type": "git",
-    "url": "https://tay1orjones@github.com/tay1orjones/tay1orjones.github.io.git"
+  "name": "tay1orjones.github.io",
+  "description": "my personal site",
+  "version": "2.0.0",
+  "author": "taylor jones",
+  "dependencies": {
+    "gatsby": "^1.9.141",
+    "gatsby-link": "^1.6.32",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-source-filesystem": "1.5.11",
+    "gatsby-transformer-remark": "1.7.25"
   },
-  "author": "Taylor Jones",
-  "license": "The MIT License (MIT)",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-jekyll": "^0.4.2",
-    "grunt-contrib-clean": "^0.5.0",
-    "grunt-contrib-cssmin": "^0.9.0",
-    "grunt-contrib-uglify": "^0.4.0",
-    "grunt-jsbeautifier": "^0.2.7"
+    "prettier": "^1.9.2"
   }
 }
