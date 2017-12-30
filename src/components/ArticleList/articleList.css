@@ -1,0 +1,23 @@
+@import "../../layouts/variables.css";
+
+.article-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--secondary-bg-color);
+}
+
+.article-list h2 {
+  margin: 0;
+}
+
+.article-list li {
+  padding: 3rem;
+  display: block;
+  max-width: var(--text-max-width);
+  margin: 0 auto;
+}
+
+.article-list li:not(:last-child) {
+  border-bottom: 1px solid #d8d8d8;
+}

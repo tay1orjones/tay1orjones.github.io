@@ -1,0 +1,48 @@
+@import "../layouts/variables.css";
+
+.post {
+  margin: 1rem;
+}
+
+.post h1 {
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.post time {
+  margin-bottom: 3rem;
+  display: block;
+}
+
+@media (min-width: 44rem) {
+  .post p,
+  .post h1,
+  .post h2,
+  .post h3,
+  .post h4,
+  .post h5,
+  .post h6,
+  .post time,
+  .post pre,
+  .post header,
+  .post table,
+  .post blockquote {
+    max-width: var(--text-max-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .post ul,
+  .post ol,
+  .post dl,
+  .post dd {
+    max-width: var(--text-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.45rem;
+  }
+}
+
+.post pre {
+  padding: 2rem;
+}

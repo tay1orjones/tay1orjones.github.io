@@ -1,0 +1,32 @@
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.social-icon {
+  padding: 1rem;
+  border-radius: 50%;
+  line-height: 0;
+  border: 1px solid;
+  margin: 0.25rem;
+  transform: scale(0.8);
+}
+
+@media (min-width: 400px) {
+  .social-icons {
+    grid-column: 1/3;
+    justify-content: initial;
+  }
+}
+
+@media (min-width: 80ch) {
+  .social-icons {
+    margin: initial;
+    grid-column: 2/3;
+  }
+
+  .social-icon {
+    margin: initial;
+  }
+}

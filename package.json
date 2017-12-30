@@ -7,14 +7,20 @@
     "gatsby": "^1.9.141",
     "gatsby-link": "^1.6.32",
     "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-remark-prismjs": "1.2.11",
     "gatsby-source-filesystem": "1.5.11",
-    "gatsby-transformer-remark": "1.7.25"
+    "gatsby-transformer-remark": "1.7.25",
+    "lodash": "4.17.4",
+    "react-feather": "1.0.8"
   },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
   "main": "n/a",
+  "browserslist": [
+    "> 1%"
+  ],
   "scripts": {
     "build": "gatsby build",
     "start": "gatsby develop",

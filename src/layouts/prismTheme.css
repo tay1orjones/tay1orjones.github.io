@@ -1,0 +1,142 @@
+/* 
+ * Theme colors and style from reactjs.org
+ * https://github.com/reactjs/reactjs.org/blob/master/src/prism-styles.js 
+ */
+
+:root {
+  --dark: #282c34;
+  --white: #ffffff;
+
+  --prism-char: #d8dee9;
+  --prism-comment: #999999;
+  --prism-keyword: #c5a5c5;
+  --prism-lineHighlight: #14161a;
+  --prism-primitive: #5a9bcf;
+  --prism-string: #8dc891;
+  --prism-variable: #d7deea;
+  --prism-boolean: #ff8b50;
+  --prism-punctuation: #5fb3b3;
+  --prism-tag: #fc929e;
+  --prism-function: #79b6f2;
+  --prism-className: #fac863;
+  --prism-method: #6699cc;
+  --prism-operator: #fc929e;
+}
+
+.gatsby-highlight {
+  background: var(--dark);
+  color: var(--white);
+  border-radius: 10px;
+  overflow: auto;
+  tab-size: 1.5em;
+}
+
+.gatsby-highlight code[class*="gatsby-code-"],
+.gatsby-highlight pre[class*="gatsby-code-"],
+.gatsby-highlight pre.prism-code {
+  height: auto !important;
+  margin: 1rem;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.gatsby-highlight + .gatsby-highlight {
+  margin-top: 20px;
+}
+
+.gatsby-highlight-code-line {
+  background-color: var(--prism-lineHighlight);
+  display: block;
+  margin: -0.125rem calc(-1rem - 15px);
+  padding: 0.125rem calc(1rem + 15px);
+}
+
+.token.attr-name {
+  color: var(--prism-keyword);
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--prism-comment);
+}
+
+.token.property,
+.token.number,
+.token.function-name,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: var(--prism-primitive);
+}
+
+.token.boolean {
+  color: var(--prism-boolean);
+}
+
+.token.tag {
+  color: var(--prism-tag);
+}
+
+.token.string {
+  color: var(--prism-string);
+}
+
+.token.punctuation {
+  color: var(--prism-punctuation);
+}
+
+.token.selector,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: var(--prism-char);
+}
+
+.token.function {
+  color: var(--prism-function);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+  color: var(--prism-variable);
+}
+
+.token.attr-value {
+  color: var(--prism-string);
+}
+
+.token.keyword {
+  color: var(--prism-keyword);
+}
+
+.token.atrule,
+.token.class-name {
+  color: var(--prism-className);
+}
+
+.token.important {
+  font-weight: 400;
+}
+
+.token.bold {
+  font-weight: 700;
+}
+
+.token.italic {
+  font-style: "italic";
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.namespace {
+  opacity: 0.7;
+}
