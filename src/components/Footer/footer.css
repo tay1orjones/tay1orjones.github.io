@@ -1,6 +1,10 @@
-.footer p {
+.footer {
   text-align: center;
   padding: 1rem;
   margin: 0;
-  line-height: 1rem;
+}
+
+.footer-item:nth-child(1n + 2)::before {
+  content: "\2022";
+  margin: 0 0.5rem;
 }

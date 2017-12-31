@@ -46,7 +46,8 @@ a:hover {
 a:active {
   color: #79a6f6;
 }
-p a {
+p a,
+span a {
   text-underline-position: under;
 }
 abbr[title] {
