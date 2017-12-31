@@ -36,10 +36,12 @@ a {
   background-color: transparent;
   text-decoration-skip: ink;
   color: #2d74da;
+  transition: 125ms ease-in all;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  background: #e1ebf7;
 }
 a:active {
   color: #79a6f6;

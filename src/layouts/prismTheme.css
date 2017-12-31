@@ -3,25 +3,7 @@
  * https://github.com/reactjs/reactjs.org/blob/master/src/prism-styles.js 
  */
 
-:root {
-  --dark: #282c34;
-  --white: #ffffff;
-
-  --prism-char: #d8dee9;
-  --prism-comment: #999999;
-  --prism-keyword: #c5a5c5;
-  --prism-lineHighlight: #14161a;
-  --prism-primitive: #5a9bcf;
-  --prism-string: #8dc891;
-  --prism-variable: #d7deea;
-  --prism-boolean: #ff8b50;
-  --prism-punctuation: #5fb3b3;
-  --prism-tag: #fc929e;
-  --prism-function: #79b6f2;
-  --prism-className: #fac863;
-  --prism-method: #6699cc;
-  --prism-operator: #fc929e;
-}
+@import "./variables.css";
 
 .gatsby-highlight {
   background: var(--dark);
@@ -29,6 +11,8 @@
   border-radius: 10px;
   overflow: auto;
   tab-size: 1.5em;
+  margin: 3rem auto;
+  max-width: var(--text-max-width);
 }
 
 .gatsby-highlight code[class*="gatsby-code-"],

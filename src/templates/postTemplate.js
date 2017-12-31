@@ -11,7 +11,7 @@ export default function Template({
   return (
     <article className="post">
       <header>
-        <Link to="/">↩ Blog List</Link>
+        <Link to="/">&#x21e0; Blog List</Link>
       </header>
       <h1>{frontmatter.title}</h1>
       <small>

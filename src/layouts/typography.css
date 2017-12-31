@@ -167,11 +167,6 @@ samp {
   border-radius: var(--code-border-radius);
 }
 
-.gatsby-highlight {
-  margin: 0 auto;
-  max-width: var(--text-max-width);
-}
-
 p > code,
 a > code,
 h1 > code,
