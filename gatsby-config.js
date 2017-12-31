@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://taylorjon.es`,
     title: `👨🏻‍💻 Taylor Jones`,
     socialAccounts: [
       {
@@ -47,6 +48,9 @@ module.exports = {
           }
         ]
       }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`
     },
     `gatsby-plugin-netlify`
   ]
